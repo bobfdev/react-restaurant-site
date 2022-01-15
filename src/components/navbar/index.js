@@ -5,12 +5,12 @@ import {
     Bars
 } from './NavbarElements';
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
     return (
         <>
             <Nav>
                 <NavLink to='/'>Pizza</NavLink>
-                <NavIcon>
+                <NavIcon onClick={toggle}>
                     <p>Menu</p>
                     <Bars />
                 </NavIcon>
